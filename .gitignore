@@ -4,3 +4,9 @@
 ./pretrained_weights/shapes3d/*
 ./pretrained_weights/SN_Anime/*
 ./pretrained_weights/SN_MNIST/*
+./models/DisCo/__pycache__/*
+./models/SNGAN/__pycache__/*
+./models/StyleGAN2/__pycache__/*
+./models/StyleGAN2/op/__pycache__/*
+./models/__pycache__/*
+__pycache__/*
