@@ -1,0 +1,6 @@
+# weights
+./pretrained_weights/cars3d/*
+./pretrained_weights/mpi3d/*
+./pretrained_weights/shapes3d/*
+./pretrained_weights/SN_Anime/*
+./pretrained_weights/SN_MNIST/*
