@@ -27,13 +27,13 @@ def get_generator(args):
         
         if args.dataset == "MNIST":
             nc = 1 # number of channel
-            generator = load_model_from_state_dict("../pretrained_weights/SN_MNIST")
+            generator = load_model_from_state_dict("/home/cvmlserver/Seohyeon/DisCo/pretrained_weights/SN_MNIST")
             generator = generator.model
             generator.size = 32
 
         elif args.dataset == "Anime":
             nc = 3 # number of channel
-            generator = load_model_from_state_dict("../pretrained_weights/SN_Anime")
+            generator = load_model_from_state_dict("/home/cvmlserver/Seohyeon/DisCo/pretrained_weights/SN_Anime")
             generator = generator.model
             generator.size = 64
         else:
