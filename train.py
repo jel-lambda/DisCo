@@ -7,6 +7,7 @@ from torch import nn
 from torch.autograd import Variable
 import torch.optim as optimizer
 
+
 import itertools
 
 import tqdm as tqdm
@@ -21,9 +22,9 @@ from utils import *
 from visualization import generate, visualize_GAN
 
 parser = argparse.ArgumentParser(description="training codes")
-parser.add_argument("--G", type=str, default="stylegan",
+parser.add_argument("--G", type=str, default="sngan",
                     help="the type of generator: stylegan/sngan/biggan")
-parser.add_argument("--dataset", type=int, default=0,
+parser.add_argument("--dataset", type=int, default=5,
                     help="type of dataset")
 parser.add_argument("--exp_name", type=str, default="train",
                     help="experiment name")
@@ -56,7 +57,7 @@ parser.add_argument("--flipping", type=int, default=1,
 parser.add_argument("--entropy", type=int, default=1,
                     help="whether to perfrom entropy-based loss")
 args = parser.parse_args([])
-    
+print(args)
 max_iter = args.max_iter
 
 batch_size = args.B
